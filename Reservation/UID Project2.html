@@ -1,0 +1,143 @@
+<html >
+ <head>
+   <title>Reservation</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com"> 
+   <link rel="stylesheet" href="css2.css">
+</head>
+<body class="bg">
+    <div> 
+        <nav class="navbar">
+          <div class="logo">Bon Appetit</div>
+          <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+              <li><a href="">Home</a></li>
+              <li><a href="">About </a></li>
+              <li><a href="">Menu</a></li>
+              <li class="services"><a href="">Location</a></li>
+              <li><a href="">Reservation</a></li>
+              <li><a href="">Sign Up</a></li>
+              <li><a href="">Sign In</a></li>
+            </div>
+          </ul>
+        </nav>
+        <center>
+            <br><br><br>
+        <h1>RESERVATION</h1></center>
+        <form name="myform" method="post">
+            <div class="row" align="center">
+                <div class="column right">
+                    <label for="city">City</label><br>
+                    <select required style="font-size: 15;" name="city" class="in"> <option value="" disabled selected hidden>Choose your city</option>
+                        <option value="Mumbai">Mumbai</option><option value="Delhi">Delhi</option><option value="Kolkata">Kolkata</option>
+                        <option value="Chennai">Chennai</option><option value="Bengaluru">Bengaluru</option><option value="Hyderabad">Hyderabad</option>
+                        <option value="Ahmedabad">Ahmedabad</option>
+                    </select>
+                </div>
+                <div class="column left">
+                    <label for="restaurant">Restaurant:</label><br>
+                    <select required style="font-size: 15;" name="restaurant" class="in"> <option value="" disabled selected hidden>Choose the restaurant</option>
+                        <option value="1">McDonald's</option><option value="2">Taj King Shawarma</option><option value="3">Subway</option>
+                        <option value="4">Shalimar juicy</option><option value="5">KFC</option><option value="6">Oven Story Pizza</option>
+                    </select> 
+                </div>
+            </div>
+            <div class="row" align="center">
+                <div class="column right">
+                    <label for="name">Date<span class="err"></span></label><br>
+                    <input id="date" type="date" name="Date" class="in"><br>
+                </div>
+                <div class="column left">
+                    <label for="timee">Time:</label><br>
+                    <div class="tooltip"><input required type="time" id="timee" name="Time" min="06:00" max="22:00" class="in">
+                        <span class="tooltiptext">6:00 AM to 10:00 PM</span>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div align="center">
+                <button class="sign-in-btn" type="submit" value="Order!">Order!</button>
+                <br><br><br><br><br><br><br><br>
+            </div>
+        </form>
+    </div>
+     </center>
+     </div>
+     
+     <div class="footer">
+        <div class="contain">
+          <div class="col" style:"align=left"><img src="2.png" width="150px"></div>
+        <div class="col">
+          <h1>Company</h1>
+          <ul>
+            <li>Who we are</li>
+            <li>Blog</li>
+            <li>Careers</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h1>For Foodies</h1>
+          <ul>
+            <li>Code of Conduct</li>
+            <li>Community</li>
+            <li>Blog</li>
+            <li>Social</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h1>For Restaurants</h1>
+          <ul>
+            <li>Add Restaurant</li>
+         
+          </ul>
+        </div>
+           <div class="col">
+          <h1>For Enterprises</h1>
+          <ul>
+            <li>Apply for Work</li>
+         
+          </ul>
+        </div>
+        <div class="col">
+          <h1>For You</h1>
+          <ul>
+            <li>Privacy</li>
+            <li>Terms </li>
+            <li>Site map</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h1>Support</h1>
+          <ul>
+            <li>Contact us</li>
+          </ul>
+        </div>
+        <div class="col social">
+          <h1>Social</h1>
+          <ul>
+            <li><img src="f.png" width="32" style="width: 52px;"></li>
+            <li><img src="t.png" width="32" style="width: 32px;"></li>
+      
+          </ul>
+        </div>
+      <div class="clearfix"></div>
+      </div>
+      </div>
+
+     <script>
+        const restaurants = {"Mumbai":[{value:1,desc:"McDonald's"},{value:2,desc:"Taj King Shawarma"},{value:3,desc:"Subway"},{value:4,desc:"Shalimar juicy"},{value:5,desc:"KFC"},{value:6,desc:"Oven Story Pizza"}],
+         "Delhi":[{value:1,desc:"Hudson Chopsticks"},{value:2,desc:"L' Opera"},{value:3,desc:"The Burger Club"},{value:4,desc:"Amritsariya"},{value:5,desc:"La Pino'z Pizza"},{value:6,desc:"KFC"}],
+          "Kolkata":[{value:1,desc:"Food Station"},{value:2,desc:"La Pino'z Pizza"},{value:3,desc:"Chowman-Russel Street"},{value:4,desc:"Mio Amore - The Cake Shop"},{value:5,desc:"Jalapenos"},{value:6,desc:"TFC Food Panda"}],
+          "Chennai":[{value:1,desc:"Chinese Wox"},{value:2,desc:"Mcrennett"},{value:3,desc:"The Thick Shake Factory"},{value:4,desc:"Subway"},{value:5,desc:"The Bowl Company"},{value:6,desc:"Domino's Pizza"},{value:7,desc:"Writer's Cafe"}],
+          "Bengaluru":[{value:1,desc:"Juice Junction"},{value:2,desc:"The Brooklyn Creamery"},{value:3,desc:"Asian Bites"},{value:4,desc:"Euphoria"},{value:5,desc:"Burger King"},{value:6,desc:"The Belgian Waffle Co."},{value:7,desc:"Taco Bell"}],
+          "Hyderabad":[{value:1,desc:"Zomoz-The Momo Company"},{value:2,desc:"Huber & Holly"},{value:3,desc:"Ghrelin - Cafe and Patisserie"},{value:4,desc:"Pista House"},{value:5,desc:"McDonald's"},{value:6,desc:"SLAY Coffee"}],
+          "Ahmedabad":[{value:1,desc:"La Pino'z Pizza"},{value:2,desc:"The Westend Hotel"},{value:3,desc:"Hocco Eatery"},{value:4,desc:"Pickmeal"},{value:5,desc:"Pizza Hut"}]}
+         const restaurant = document.querySelector('[name=restaurant]');
+         document.querySelector('[name=city]').addEventListener('change', function(e) {
+         restaurant.innerHTML = restaurants[this.value].reduce((acc, elem) => `${acc}<option value="${elem.value}">${elem.desc}</option>`, "");
+         });
+     </script>
+</body>
+</html>
